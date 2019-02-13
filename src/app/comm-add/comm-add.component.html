@@ -1,0 +1,20 @@
+<form class="bg-light border" novalidate  [formGroup]="commForm" (ngSubmit)="onSubmit(commForm)">
+  <div class="form-group">
+    <label>userName</label>
+    <input formControlName="userName" type="text" class="form-control" id="name" placeholder="Enter UserName">
+    <div *ngIf="commForm.get('userName').hasError('required')" class="alert alert-danger">
+      Поле имя обязательное для заполнения
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Comm</label>
+    <input type="text" formControlName="commText"  class="form-control" id="commText" placeholder="Comment">
+    <div *ngIf="formErrors.userName" class="alert alert-danger">
+      {{formErrors.userName}}
+    </div>
+    <div *ngIf="formErrors.commText"class="alert alert-danger">
+      {{formErrors.commText}}
+    </div>
+  </div>
+  <input type="submit" [disabled]="!commForm.valid" class="btn btn-primary" />
+</form>

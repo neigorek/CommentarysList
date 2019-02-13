@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"userName": {
+			"name": "userName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "userName",
+			"order": 0
+		},
+		"commText": {
+			"name": "commText",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "commText",
+			"order": 1
+		},
+		"Date": {
+			"name": "Date",
+			"type": "date",
+			"typeLabel": "date",
+			"required": false,
+			"id": "Date",
+			"order": 2
+		}
+	}
+}

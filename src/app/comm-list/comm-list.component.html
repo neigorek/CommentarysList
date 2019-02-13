@@ -1,0 +1,15 @@
+<div class=" " data-spy="scroll" data-target="#comm">
+  <div id="comm" class="position-relative"  data-offset="0">
+    <div *ngFor="let comment of comments" class="list-group-item list-group-item-action border-dark" id="{{comment.id}}">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1 tex"><span class="badge badge-info text-wrap">User-name:</span>{{comment.userName}}</h5>
+        <small>{{comment.Date}}</small>
+      </div>
+      <p class="mb-1 border-top rounded"><span class="badge badge-info text-wrap">Say:</span>{{comment.commText}}</p>
+      <small> id: {{comment.id}}</small>
+    </div>
+  </div>
+</div>
+
+
+
